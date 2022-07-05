@@ -1,0 +1,36 @@
+header {
+  align-items: center;
+  background-color: rgb(28, 28, 28);
+  /* border-radius: 25px; */
+  display: flex;
+  justify-content: space-between;
+  /* margin: 25px auto; */
+  padding: 25px 100px;
+  /* width: 50%; */
+}
+
+header nav {
+  align-items: center;
+  display: flex;
+  gap: 35px;
+  justify-content: space-evenly;
+}
+
+header a {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+header a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+header h1 {
+  color: white;
+  font-size: 1.3em;
+}
