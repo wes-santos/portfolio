@@ -43,15 +43,15 @@ const Header = styled.header`
     transition: all 0.2s ease-in-out;
 
     a:after {
-      bottom: -8px;
-      border-radius: 3px;
-      content: "";
-      position: absolute;
       background-color: black;
+      border-radius: 3px;
+      bottom: -8px;
+      content: "";
       height: 3px;
       left: 0;
-      width: 0;
+      position: absolute;
       transition: all 0.35s ease-in-out;
+      width: 0;
     }
 
     a:hover:after {
@@ -64,17 +64,17 @@ const Slider = styled.section`
   overflow: hidden;
   
   .slider-image {
+    align-items: center;
     background-image: url(${SliderImage});
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
     display: flex;
-    align-items: center;
+    height: 100vh;
+    max-width: 100%;
     opacity: 0.8;
+    width: 100vw;
 
     h3 {
       font-size: 48px;
@@ -92,8 +92,8 @@ const Slider = styled.section`
       font-family: 'Roboto Mono';
       font-size: 48px;
       font-weight: bold;
-      margin-left: 40px;
       letter-spacing: -5px;
+      margin-left: 40px;
     }
   }
 `
