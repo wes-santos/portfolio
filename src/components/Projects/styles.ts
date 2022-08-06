@@ -1,15 +1,23 @@
 import styled from "styled-components";
 
 const Title = styled.h2`
-  color: white;
   font-size: 48px;
+  margin-top: 80px;
   text-align: center;
 `;
 
 const Container = styled.section`
-  background: rgb(13,13,13);
-  background: linear-gradient(180deg, rgba(13,13,13,1) 0%, rgba(34,34,34,1) 50%); 
   height: 800px;
+  width: 98vw;
+  margin: auto;
 `;
 
-export { Title, Container };
+const CardsContainer = styled.section`
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 30px;
+`;
+
+export { Title, Container, CardsContainer };

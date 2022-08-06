@@ -77,10 +77,11 @@ const Slider = styled.section`
     background-size: cover;
     background-position: center;
     display: flex;
-    height: 95vh;
+    height: 100vh;
     max-width: 100%;
     opacity: 0.8;
     width: 100vw;
+    z-index: 1;
 
     h3 {
       color: white;

@@ -1,10 +1,13 @@
 import * as C from '../../shared/styles';
+import SliderImage from '../../images/slider-image2.jpg';
 
 export default function Slider() {
   return(
     <C.Slider>
       <div className="test">
-        <div className="slider-image">
+        <div
+          className="slider-image"
+        >
           <div>
             <span className="open-code-slider">{'<'}</span>
             <h3>
