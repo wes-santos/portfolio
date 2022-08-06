@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import SliderImage from '../images/slider-image.jpg';
+import SliderImage from '../images/slider-image2.jpg';
 
 const Header = styled.header`
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   left: 0;
@@ -14,7 +15,7 @@ const Header = styled.header`
   z-index: 1;
 
   a {
-    color: black;
+    color: white;
     text-decoration: none;
     position: relative;
 
@@ -24,7 +25,8 @@ const Header = styled.header`
   }
 
   h2 {
-    font-size: 26px;
+    color: white;
+    font-size: 32px;
     &:hover {
       cursor: pointer;
     }
@@ -35,15 +37,16 @@ const Header = styled.header`
   }
 
   ul, ul li a {
+    color: white;
     display: flex;
-    font-size: 20px;
-    gap: 40px;
+    font-size: 26px;
+    gap: 50px;
     letter-spacing: 0.5px;
     list-style: none;
     transition: all 0.2s ease-in-out;
 
     a:after {
-      background-color: black;
+      background-color: #99F2E9;
       border-radius: 3px;
       bottom: -8px;
       content: "";
@@ -62,33 +65,38 @@ const Header = styled.header`
 
 const Slider = styled.section`
   overflow: hidden;
+
+  .test {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
   
   .slider-image {
     align-items: center;
     background-image: url(${SliderImage});
-    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
-    height: 100vh;
+    height: 95vh;
     max-width: 100%;
     opacity: 0.8;
     width: 100vw;
 
     h3 {
-      font-size: 48px;
+      color: white;
+      font-size: 80px;
       margin-left: 70px;
     }
     
     .slider-subtitle {
-      color: grey;
-      font-size: 24px;
-      font-weight: normal;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 20px;
+      font-weight: 300;
       margin-left: 70px;
     }
     
     .open-code-slider, .close-code-slider {
+      color: #99F2E9;
       font-family: 'Roboto Mono';
       font-size: 48px;
       font-weight: bold;
